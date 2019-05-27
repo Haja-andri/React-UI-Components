@@ -1,1 +1,20 @@
 /* All styles for your Card Components live here */
+.cardContainer {
+    border:1px solid blue;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card {
+    border:1px solid green;
+    width: 80%;
+}
+
+.card img {
+    width:100%;
+}
+
+.cardContent {
+    padding-left: 2rem;
+}

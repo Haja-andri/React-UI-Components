@@ -5,15 +5,15 @@ import './components/HeaderComponents/HeaderContent.js'
 
 // starting with the smallest piece
 // header title
-function HeaderTitle ({headerText}){
+function HeaderTitle ({titleText}){
   return (
-    <h1>{headerText} <span>@LambdaSchool . 27 may</span></h1>
+    <h1>{titleText} <span>@LambdaSchool . 27 may</span></h1>
   );
 }
 // The header Thumbnail
 function HeaderThumb ({link}) {
   return (
-    <img src={link} className="logo" />
+    <img src={link} className="logo" alt=""/>
   );
 }
 
@@ -21,7 +21,7 @@ function HeaderThumb ({link}) {
 function HeaderContent ({headerText}) {
   return (
     <div>
-      <h1>Lamda School <span>@LambdaSchool . 27 may</span></h1>
+      <HeaderTitle titleText ="Lambda School"/>
       <p> {headerText} </p>
     </div>
   );
@@ -37,9 +37,45 @@ function BuildHeader () {
   );
 }
 
+// the card section
+
+function CardContent () {
+  return (
+    <div className="cardContent">
+      <h2>
+        Get started with react
+      </h2>        
+      <p>
+        React make painless to create interactives UIs. Design simple view for each state in your application.
+      </p>
+      <span>reactjs.org</span>
+    </div>
+  );
+}
+
+function CardImage ({cardImgLink}) {
+  return (
+    <img src={cardImgLink} alt=""/>
+  );
+}
+
+function CardBuilder (){
+  return (
+    <div className="cardContainer">
+      <div className="card">
+      <CardImage cardImgLink="https://tk-assets.lambdaschool.com/fcd75197-7d12-46ec-bc9e-4130f34822fa_reactbackground.png"/>
+      <CardContent />
+      </div>
+    </div>
+  );
+}
+
 const App = () => {
   return (
-    <BuildHeader />
+    <div className="mainContainer">
+      <BuildHeader />
+      <CardBuilder />
+    </div>
   );
 };
 
