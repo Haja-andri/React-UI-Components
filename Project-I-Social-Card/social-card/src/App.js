@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 
 
-import BuildHeader from './components/HeaderComponents/HeaderContainer'
+import BuildHeader from './components/HeaderComponents/HeaderContainer';
+import FooterBuilder from './components/FooterComponents/Footer';
 
 // the card section
 
@@ -34,20 +35,6 @@ function CardBuilder (){
       <CardContent />
       </div>
     </div>
-  );
-}
-
-// Footer start here
-
-function FooterBuilder () {
-  return (
-    <footer>
-      <div className="icon-countainer">
-        <i class="far fa-comment"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="far fa-heart"></i>
-      </div>
-    </footer>
   );
 }
 
