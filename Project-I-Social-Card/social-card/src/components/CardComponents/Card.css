@@ -7,8 +7,10 @@
 }
 
 .card {
-    border:1px solid green;
+    border:1px solid lightgray;
     width: 80%;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 
 .card img {
