@@ -1,0 +1,24 @@
+/* Main container */
+
+.mainContainer {
+    border:1px solid red;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Rows */
+.row {
+    border:1px solid blue;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+}
+
+/* Rows */
+.row-child {
+    border:1px solid green;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
