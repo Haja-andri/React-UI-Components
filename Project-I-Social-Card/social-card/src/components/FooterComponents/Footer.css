@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-countainer {
+    width: 80%;
+    display: flex;
+}
+
+.fa-comment{
+    padding: .5rem 2rem;
+}
+
+.fa-retweet, .fa-heart {
+    padding: .5rem .2rem;
+}
+
+.icon-countainer span{
+    padding-top: .5rem;
+    padding-left: .5rem;
+    padding-right: 1.5rem;
+}
