@@ -1,14 +1,14 @@
 /* Main container */
 
 .mainContainer {
-    border:1px solid red;
+    border:1px solid #666666;
     width: 50%;
     margin: 0 auto;
 }
 
 /* Rows */
 .row {
-    border:1px solid blue;
+    border-bottom: 1px solid #666666;
     min-height: 50px;
     width: 100%;
     display: flex;
@@ -16,9 +16,23 @@
 
 /* Rows */
 .row-child {
-    border:1px solid green;
-    text-align: center;
+    justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 4rem;
+    border-right: 1px solid #666666;
+}
+
+.row-child.full {
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: .5rem;
+}
+
+.row-child.TF {
+    width: 75%;
+}
+
+.row-child.forth {
+    width: 25%
 }
