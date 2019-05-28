@@ -4,6 +4,7 @@
     border:1px solid #666666;
     width: 50%;
     margin: 0 auto;
+    min-width: 400px;
 }
 
 /* Rows */
@@ -26,13 +27,22 @@
 .row-child.full {
     width: 100%;
     justify-content: flex-end;
-    padding-right: .5rem;
+    padding-right: .7rem;
+    color: whitesmoke;
 }
 
 .row-child.TF {
     width: 75%;
 }
 
+.row-child.TF.small {
+    font-size: 2rem;
+}
+
 .row-child.forth {
-    width: 25%
+    width: 25%;
+}
+
+.row-child.forth.white {
+    color: whitesmoke;
 }
