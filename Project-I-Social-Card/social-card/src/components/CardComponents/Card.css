@@ -8,12 +8,16 @@
 .card {
     border:1px solid lightgray;
     width: 80%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
 }
 
 .card img {
     width:100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
 }
 
 .cardContent {
