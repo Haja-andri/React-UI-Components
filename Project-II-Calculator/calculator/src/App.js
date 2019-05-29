@@ -1,21 +1,42 @@
 import React from 'react';
 import './App.css';
+import NumberButton from './components/ButtonComponents/NumberButton'
+
+// The row-child components
 
 const App = () => {
+
   return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+    <div className="mainContainer">
+      <div className="row">
+          <NumberButton className="row-child full" text="0" bkg="black" />
+      </div>
+      <div className="row">
+        <NumberButton className="row-child TF small" text="clear" />
+        <NumberButton className="row-child forth white" text="/" bkg="red"/>
+      </div>      
+      <div className="row">
+        <NumberButton className="row-child forth" text="7" />
+        <NumberButton className="row-child forth" text="8" />
+        <NumberButton className="row-child forth" text="9" />
+        <NumberButton className="row-child forth white" text="X" bkg="red" />
+      </div>      
+      <div className="row">
+        <NumberButton className="row-child forth" text="4" />
+        <NumberButton className="row-child forth" text="5" />
+        <NumberButton className="row-child forth" text="6" />
+        <NumberButton className="row-child forth white" text="-" bkg="red" />
+      </div>      
+      <div className="row">
+        <NumberButton className="row-child forth" text="1" />
+        <NumberButton className="row-child forth" text="2" />
+        <NumberButton className="row-child forth" text="3" />
+        <NumberButton className="row-child forth white" text="+" bkg="red" />
+      </div>      
+      <div className="row">
+        <NumberButton className="row-child TF" text="0" />
+        <NumberButton className="row-child forth white" text="=" bkg="red"/>
+      </div>      
     </div>
   );
 };

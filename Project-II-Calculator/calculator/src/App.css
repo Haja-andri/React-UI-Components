@@ -1,0 +1,48 @@
+/* Main container */
+
+.mainContainer {
+    border:1px solid #666666;
+    width: 50%;
+    margin: 0 auto;
+    min-width: 400px;
+}
+
+/* Rows */
+.row {
+    border-bottom: 1px solid #666666;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+}
+
+/* Rows */
+.row-child {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    border-right: 1px solid #666666;
+}
+
+.row-child.full {
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: .7rem;
+    color: whitesmoke;
+}
+
+.row-child.TF {
+    width: 75%;
+}
+
+.row-child.TF.small {
+    font-size: 2rem;
+}
+
+.row-child.forth {
+    width: 25%;
+}
+
+.row-child.forth.white {
+    color: whitesmoke;
+}
